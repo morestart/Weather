@@ -1,16 +1,14 @@
-from datetime import datetime, timedelta
+from datetime import timedelta
 import logging
 import requests
 from requests.exceptions import (
     ConnectionError as ConnectError, HTTPError, Timeout)
 import voluptuous as vol
-
 from homeassistant.components.weather import (
     ATTR_FORECAST_CONDITION, ATTR_FORECAST_PRECIPITATION, ATTR_FORECAST_TEMP,
     ATTR_FORECAST_TEMP_LOW, ATTR_FORECAST_TIME, ATTR_FORECAST_WIND_BEARING,
     ATTR_FORECAST_WIND_SPEED, PLATFORM_SCHEMA, WeatherEntity)
-from homeassistant.const import (
-    CONF_API_KEY, CONF_ID, TEMP_CELSIUS, TEMP_FAHRENHEIT)
+from homeassistant.const import (CONF_API_KEY, CONF_ID, TEMP_CELSIUS)
 import homeassistant.helpers.config_validation as cv
 from homeassistant.util import Throttle
 
