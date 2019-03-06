@@ -61,8 +61,8 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     api_key = config.get(CONF_API_KEY)
     id = config.get(CONF_ID)
 
-    heweather = WeatherData(api_key, id)
-    add_entities([HeWeather(heweather)], True)
+    hew = WeatherData(api_key, id)
+    add_entities([HeWeather(hew)], True)
 
 
 class HeWeather(WeatherEntity):
