@@ -139,7 +139,6 @@ class HeWeather(WeatherEntity):
                 ATTR_FORECAST_CONDITION:
                     [k for k, v in MAP_CONDITION.items() if int(code) in v][0],
             }
-            _LOGGER.error("TEST" + [k for k, v in MAP_CONDITION.items() if int(code) in v][0])
             data.append(w_data)
         return data
 
