@@ -1,13 +1,23 @@
 # HomeAssistant 天气卡
 
+## 效果图
+
+![图](https://github.com/morestart/weather/blob/master/view.png)
+
+
 ## 使用方法：
 
-- 在HA中建立以下路径`home assistant\custom_components\HeWeather\sensor.py`
-- 或者使用此命令下载 `curl -O https://raw.githubusercontent.com/morestart/HeWeather/More-than-0.63/sensor.py`
+- 在HA中建立以下路径`home assistant\custom_components\he_weather\weather.py`
+- 或者使用此命令下载 `curl -O https://raw.githubusercontent.com/morestart/weather/master/weather.py`
 
 如果HA中不存在以上路径，请参照图示自行建立即可。
 
-- 在sensor文件夹下放入HeWeather.py文件，此版本文件支持0.63以上HA。
-- 由于部分城市没有AQI监测站，所以报错，请使用你的上级城市名称，配置城市名称支持中英文IP及拼音。
-
 ## 配置内容如下
+
+```yaml
+weather:
+  - platform: he_weather
+    api_key: key
+    id: auto_ip 或者 填写城市名称 eg（北京，beijing）
+```
+
