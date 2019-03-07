@@ -10,7 +10,7 @@
 - 在HA中建立以下路径`home assistant\custom_components\he_weather\weather.py`
 - 或者使用此命令下载 `curl -O https://raw.githubusercontent.com/morestart/weather/master/weather.py`
 
-如果HA中不存在以上路径，请参照图示自行建立即可。
+如果HA中不存在以上路径，自行建立即可。
 
 ## 配置内容如下
 
