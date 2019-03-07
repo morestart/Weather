@@ -23,7 +23,7 @@ weather:
 
 ## 天气卡片美化
 
-感谢![kalkih](https://github.com/kalkih/simple-weather-card)贡献
+[感谢kalkih贡献](https://github.com/kalkih/simple-weather-card)
 
 效果图:
 
