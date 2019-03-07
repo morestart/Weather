@@ -25,9 +25,36 @@ weather:
 
 感谢![kalkih](https://github.com/kalkih/simple-weather-card)贡献
 
+效果图:
+
+![](https://github.com/morestart/Weather/blob/master/beautiful.png)
+
 使用方式如下:
 
 - 将`simple-weather-card.bundle.js`文件放置于`\www`文件夹下
+  - 使用以下命令下载或者拉取代码包
+    - `curl -O https://raw.githubusercontent.com/morestart/Weather/master/simple-weather-card.bundle.js`
+
+配置:
+
+```yaml
+cards:
+      - type: 'custom:simple-weather-card'
+        entity: weather.qing_dao
+        name: ' '
+        backdrop: true
+      - type: 'custom:simple-weather-card'
+        entity: weather.qing_dao
+        name: 青岛
+        backdrop:
+          day: var(--primary-color)
+          night: '#40445a'
+      - type: 'custom:simple-weather-card'
+        entity: weather.qing_dao
+        name: 青岛
+      - entity: weather.qing_dao
+        type: weather-forecast
+```
 
 
 
