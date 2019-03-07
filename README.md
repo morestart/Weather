@@ -21,3 +21,13 @@ weather:
     id: auto_ip 或者 填写城市名称 eg（北京，beijing）
 ```
 
+## 天气卡片美化
+
+感谢![kalkih](https://github.com/kalkih/simple-weather-card)贡献
+
+使用方式如下:
+
+- 将`simple-weather-card.bundle.js`文件放置于`\www`文件夹下
+
+
+
