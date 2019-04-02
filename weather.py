@@ -59,9 +59,9 @@ MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=30)
 
 def setup_platform(hass, config, add_entities, discovery_info=None):
     api_key = config.get(CONF_API_KEY)
-    id = config.get(CONF_ID)
+    city_id = config.get(CONF_ID)
 
-    hew = WeatherData(api_key, id)
+    hew = WeatherData(api_key, city_id)
     add_entities([HeWeather(hew)], True)
 
 
