@@ -1,0 +1,8 @@
+{
+  "domain": "he_weather",
+  "name": "he_weather",
+  "documentation": "https://www.hachina.io/16211.html#comments",
+  "requirements": ["requests"],
+  "codeowners": [],
+  "dependencies": []
+}

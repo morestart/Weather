@@ -38,22 +38,25 @@ weather:
 配置:
 
 ```yaml
+resources:
+  - url: /local/simple-weather-card.bundle.js?v=0.3.0
+    type: module
 cards:
-      - type: 'custom:simple-weather-card'
-        entity: weather.qing_dao
-        name: ' '
-        backdrop: true
-      - type: 'custom:simple-weather-card'
-        entity: weather.qing_dao
-        name: 青岛
-        backdrop:
-          day: var(--primary-color)
-          night: '#40445a'
-      - type: 'custom:simple-weather-card'
-        entity: weather.qing_dao
-        name: 青岛
-      - entity: weather.qing_dao
-        type: weather-forecast
+  - type: 'custom:simple-weather-card'
+    entity: weather.qing_dao
+    name: ' '
+    backdrop: true
+  - type: 'custom:simple-weather-card'
+    entity: weather.qing_dao
+    name: 青岛
+    backdrop:
+      day: var(--primary-color)
+      night: '#40445a'
+  - type: 'custom:simple-weather-card'
+    entity: weather.qing_dao
+    name: 青岛
+  - entity: weather.qing_dao
+    type: weather-forecast
 ```
 
 
